@@ -1,5 +1,11 @@
-import speedtest
+import os
+try:
+  import speedtest
+except:
+  os.system('pip install speedtest')
+  import speedtest
 
+os.system('cls')
 test = speedtest.Speedtest()
 
 print("Loading server list...")
